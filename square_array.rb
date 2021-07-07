@@ -1,3 +1,13 @@
 def square_array(array)
-  # your code here
+  result = []
+  array.each do |number|
+    result << number**2
+  end
+  result
+end
+
+def square_array_using_collect(array)
+  array.collect do |number|
+    number**2
+  end
 end
